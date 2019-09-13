@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateEmail(str){
+        let patt= /^[A-Za-z0-9]+\@[A-Za-z0-9]+\.[A-Za-z0-9]+$/;
+        let result= patt.test(str);
+        if(result){
+            alert("chuoi hop le!");
+        }
+        else
+                alert("chuoi ko hop le");
+    }
+    let str1= "abc@hotmail.com"; validateEmail(str1);
+    let str2="ab@yahoo.com"; validateEmail(str2);
+    let str3="a@gmail.com"; validateEmail(str3);
+    let str4="@gmail.com"; validateEmail(str4);
+    let str5="ab@gmail."; validateEmail(str5);
+    let str6="@#abc@gmail.com";validateEmail(str6);
+</script>
+</body>
+</html>
